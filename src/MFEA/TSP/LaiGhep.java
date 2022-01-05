@@ -34,8 +34,8 @@ public class LaiGhep {
                     ind.Gen[i-1] = ind.Gen[i-1] +del*(1-ind.Gen[i-1]);
                 }
             }
-//            if(ind.Gen[i-1]>1) ind.Gen[i-1] =parent.Gen[i-1] + genRandomDouble()*(1-parent.Gen[i-1]);
-//            else if(ind.Gen[i-1]<0) ind.Gen[i-1] = parent.Gen[i-1]*genRandomDouble();
+            if(ind.Gen[i-1]>1) ind.Gen[i-1] =parent.Gen[i-1] + genRandomDouble()*(1-parent.Gen[i-1]);
+            else if(ind.Gen[i-1]<0) ind.Gen[i-1] = parent.Gen[i-1]*genRandomDouble();
         }
         return ind;
     }
@@ -81,13 +81,13 @@ public class LaiGhep {
         }
         for(int i=0;i<globalGen; i++){
             double v = 0.5*((1+cf[i])*cha.Gen[i] + (1-cf[i])*me.Gen[i]);
-//            if(v>1) v=1;
-//            else if(v<0) v= 0;
+            if(v>1) v=1;
+            else if(v<0) v= 0;
             child[0].Gen[i]= v;
 
             double v2 = 0.5*((1-cf[i])*cha.Gen[i] + (1+cf[i])*me.Gen[i]);
-//            if(v2>1) v2= 1;
-//            else if(v2<0) v2= 0;
+            if(v2>1) v2= 1;
+            else if(v2<0) v2= 0;
             child[1].Gen[i]= v2;
         }
         variable_swap(child[0],child[1]);
@@ -120,13 +120,13 @@ public class LaiGhep {
             }
             for(int i=0;i<globalGen; i++){
                 double v = 0.5*((1+cf[i])*cha.Gen[i] + (1-cf[i])*me.Gen[i]);
-//                if(v>1) v=1;
-//                else if(v<0) v= 0;
+                if(v>1) v=1;
+                else if(v<0) v= 0;
                 child[0].Gen[i]= v;
 
                 double v2 = 0.5*((1-cf[i])*cha.Gen[i] + (1+cf[i])*me.Gen[i]);
-//                if(v2>1) v2= 1;
-//                else if(v2<0) v2= 0;
+                if(v2>1) v2= 1;
+                else if(v2<0) v2= 0;
                 child[1].Gen[i]= v2;
             }
             variable_swap(child[0],child[1]);

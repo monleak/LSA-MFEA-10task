@@ -29,7 +29,7 @@ public class KhoiTao {
         for (int k=0;k<soTacVu;k++){
             for (int i=k*maxCaThe;i<(k+1)*maxCaThe;i++){
                 for (int j=0;j<globalGen;j++){
-                    dsNST[theHe%2][i].Gen[j] = pow(-1,genRandom(2))*genRandomDouble();
+                    dsNST[theHe%2][i].Gen[j] = genRandomDouble();
                 }
                 dsNST[theHe%2][i].skill_factor=k;
             }

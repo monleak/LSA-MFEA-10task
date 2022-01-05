@@ -44,53 +44,53 @@ public class DanhGiaQuanThe {
         double[] temp = new double[Gen.length];
         if(Task==1){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*100;
+                temp[i] = (Gen[i]-0.5)*200;
             }
         }
         if(Task==2){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*100;
+                temp[i] = (Gen[i]-0.5)*200;
             }
         }
         if(Task==3){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*100;
+                temp[i] = (Gen[i]-0.5)*200;
             }
         }
         if(Task==4){
             //Riêng task 4 chỉ có 25 phần tử
-            for (int i=0;i<25;i++){
-                temp[i] = Gen[i]/2;
+            for (int i=0;i<Gen.length;i++){
+                temp[i] = Gen[i]-0.5;
             }
         }
         if(Task==5){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*50;
+                temp[i] = (Gen[i]-0.5)*100;
             }
         }
         if(Task==6){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*50;
+                temp[i] = (Gen[i]-0.5)*100;
             }
         }
         if(Task==7){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]/2;
+                temp[i] = Gen[i]-0.5;
             }
         }
         if(Task==8){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*500;
+                temp[i] = (Gen[i]-0.5)*1000;
             }
         }
         if(Task==9){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*100;
+                temp[i] = (Gen[i]-0.5)*200;
             }
         }
         if(Task==10){
             for (int i=0;i<Gen.length;i++){
-                temp[i] = Gen[i]*50;
+                temp[i] = (Gen[i]-0.5)*100;
             }
         }
         return temp;

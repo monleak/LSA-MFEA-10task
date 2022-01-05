@@ -1,6 +1,5 @@
 package Function;
 
-import static MFEA.TSP.main.Π;
 import static java.lang.Math.*;
 
 public class ACKLEY {
@@ -8,7 +7,7 @@ public class ACKLEY {
         int dim = X.length;
         int a = 20;
         double b =0.2;
-        double c=2*Π;
+        double c=2*Math.PI;
         double sum1=0, sum2=0;
         for(int i=0;i<dim;i++){
             sum1 = sum1+ (X[i]-40)*(X[i]-40);

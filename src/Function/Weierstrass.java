@@ -10,13 +10,13 @@ public class Weierstrass {
         double b=3;
         int kmax=20;
         double sum=0;
-        for(int i=0;i<dim;i++){
+        for(int i=1;i<=dim;i++){
             for(int k=0;k<=kmax;k++){
-                sum = sum+ pow(a,k)*cos(2*Π*pow(b,k)*(X[i]+0.4+0.5));
+                sum = sum+ pow(a,k)*cos(2*Math.PI*pow(b,k)*(X[i-1]+0.4+0.5));
             }
         }
         for(int k=0;k<=kmax;k++){
-            sum = sum - dim*pow(a,k)*cos(2*Π*pow(b,k)*0.5);
+            sum = sum - dim*pow(a,k)*cos(2*Math.PI*pow(b,k)*0.5);
         }
         return sum;
     }
@@ -26,13 +26,13 @@ public class Weierstrass {
         double b=3;
         int kmax=20;
         double sum=0;
-        for(int i=0;i<dim;i++){
+        for(int i=1;i<=dim;i++){
             for(int k=0;k<=kmax;k++){
-                sum = sum+ pow(a,k)*cos(2*Π*pow(b,k)*(X[i]+0.4+0.5));
+                sum = sum+ pow(a,k)*cos(2*Math.PI*pow(b,k)*(X[i-1]+0.4+0.5));
             }
         }
         for(int k=0;k<=kmax;k++){
-            sum = sum - dim*pow(a,k)*cos(2*Π*pow(b,k)*0.5);
+            sum = sum - dim*pow(a,k)*cos(2*Math.PI*pow(b,k)*0.5);
         }
         return sum;
     }
